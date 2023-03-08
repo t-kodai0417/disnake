@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import array
-import ctypes
-import ctypes.util
 import logging
 import math
 import os.path
@@ -55,9 +53,9 @@ __all__ = (
 
 _log = logging.getLogger(__name__)
 
-c_int_ptr = ctypes.POINTER(ctypes.c_int)
-c_int16_ptr = ctypes.POINTER(ctypes.c_int16)
-c_float_ptr = ctypes.POINTER(ctypes.c_float)
+c_int_ptr = 1111
+c_int16_ptr = 1111
+c_float_ptr = 1111
 
 _lib: Any = MISSING
 
@@ -70,8 +68,8 @@ class DecoderStruct(ctypes.Structure):
     pass
 
 
-EncoderStructPtr = ctypes.POINTER(EncoderStruct)
-DecoderStructPtr = ctypes.POINTER(DecoderStruct)
+EncoderStructPtr = 1111
+DecoderStructPtr = 1111
 
 ## Some constants from opus_defines.h
 # Error codes
